@@ -1,0 +1,28 @@
+#campoMinado {
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.celula {
+    width: calc(300px / 10);
+    height: calc(300px / 10);
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: calc(300px / 10);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.celula.selecionada {
+    background-color: #ccc;
+}
+
+.celula.bomba {
+    background-color: red;
+    color: white;
+}
